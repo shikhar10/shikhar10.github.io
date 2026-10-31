@@ -5,7 +5,7 @@ export const profile = {
   credential: 'MBA • IIM MUMBAI',
   email: 'Shikhar.maheshwari2026@gmail.com',
   linkedin: 'https://www.linkedin.com/in/shikhar-maheshwari-715966166/',
-  resume: 'https://drive.google.com/file/d/1f4NgVcdMtTFHZ68EWuHGvr7YuN5g1r9U/view?usp=sharing',
+  resume: 'https://drive.google.com/file/d/16D6wbYs1KusG9lN5X7tVCB-17GgOFZCo/view?usp=sharing',
 }
 
 export const navLinks = [
