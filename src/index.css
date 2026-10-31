@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  html {
+    @apply scroll-smooth bg-black;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-black font-body text-white antialiased;
+  }
+  ::selection {
+    @apply bg-neon text-black;
+  }
+  :focus-visible {
+    @apply rounded outline outline-2 outline-offset-4 outline-neon;
+  }
+}
+
+@layer utilities {
+  /* Outlined display text. Variable fonts have overlapping contours, so a transparent
+     fill shows inner seams; a black fill painted over a doubled stroke hides them
+     and reads as transparent on the black page. */
+  .text-outline {
+    color: #000000;
+    -webkit-text-stroke: 3px #ffffff;
+    paint-order: stroke fill;
+  }
+  .gutter {
+    padding-left: max(1.25rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1.25rem, env(safe-area-inset-right, 0px));
+  }
+  @media (min-width: 768px) {
+    .gutter {
+      padding-left: max(2.5rem, env(safe-area-inset-left, 0px));
+      padding-right: max(2.5rem, env(safe-area-inset-right, 0px));
+    }
+  }
+}
