@@ -12,6 +12,7 @@ export const navLinks = [
   { label: 'ABOUT', href: '#about' },
   { label: 'PROJECTS', href: '#projects' },
   { label: 'SKILLS', href: '#skills' },
+  { label: 'RECOGNITION', href: '#recognition' },
   { label: 'EXPERIENCE', href: '#experience' },
   { label: 'CONTACT', href: '#contact' },
 ]
@@ -21,94 +22,162 @@ export const hero = {
   headline: ['I BUILD', 'PRODUCTS THAT', 'MOVE BUSINESS'],
   outlined: 'FORWARD.',
   subtext:
-    'Product Manager with experience across consumer durables, IT analytics, and product engineering. Combining business strategy, workflow automation, and AI.',
+    'Product and business professional with 3+ years across sales strategy, business analytics and product engineering. Building AI-enabled products and growing categories at Pidilite; earlier at Accenture and HighRadius.',
   // Cinematic backdrop from /public. Set video to null to fall back to image, then the placeholder.
   media: { image: null, video: `${import.meta.env.BASE_URL}hero.mp4` },
 }
 
 export const about = {
   statement:
-    'I work where customer problems, commercial growth and technology meet — turning research into product bets, and product bets into numbers the business can see.',
+    'I turn customer and business needs into practical solutions with measurable results, using data and field insight to grow categories, improve customer journeys and ship products people use.',
   stats: [
-    { value: '450+', label: 'Stakeholders researched' },
+    { value: '₹36 Cr', label: 'Annual P&L owned' },
+    { value: '23+', label: 'Field managers led' },
+    { value: '3%→9%', label: 'YTD primary sales growth' },
     { value: '50+', label: 'RPA bots architected' },
-    { value: '15', label: 'Person team led' },
-    { value: '17%', label: 'Lift in E2E conversion' },
   ],
 }
 
 export const experience = [
   {
-    role: 'Growth Product Manager',
-    company: 'Pidilite Industries',
-    dates: 'Dec 2025 – Present',
+    role: 'Area Sales Manager',
+    company: 'Pidilite Industries – Rurban Division',
+    location: 'Central UP',
+    dates: 'Feb 2026 – Oct 2026',
     summary:
-      'Leading growth and product strategy across categories, from GTM plans to funnel performance. Earlier Dealer App and trade-marketing work lifted scheme comprehension 35% and cut app bounce rate 34%.',
-    tags: ['Growth', 'Category', 'GTM'],
+      'Owned P&L for a ₹36 Cr portfolio across Fevicol, M-Seal, Dr. Fixit and Roff, leading 23+ field managers and 27 distributors and lifting YTD primary growth from 3% to 9%. Field marketing raised tertiary sales 37%, and Dr. Fixit LW+ share grew 23% in Kanpur, winning the Spirit of Pidilite Award.',
+    tags: ['P&L', 'Channel Expansion', 'GTM'],
   },
   {
-    role: 'Technical Product Manager',
-    company: 'Accenture',
+    role: 'Management Trainee — Product Management',
+    company: 'Pidilite Industries – M-Seal Master’s Club',
+    location: 'Mumbai',
+    dates: 'Sep 2025 – Jan 2026',
+    summary:
+      'Owned the MMC loyalty app roadmap from discovery and PRDs to launch; the gamified learning module raised CTR 18% and DAU 15%. Built a RAG-based AI chatbot and lifted NPS by 25 points using user research and behavioural data.',
+    tags: ['Roadmap', 'RAG / LLM', 'A/B Testing'],
+  },
+  {
+    role: 'Management Trainee — Business Development',
+    company: 'Pidilite Industries – Rurban Division',
+    location: 'West Bengal',
+    dates: 'Jun 2025 – Aug 2025',
+    summary:
+      'Researched rural markets across West Bengal and MP for a ₹20 Cr M-Seal business to find distribution and channel opportunities. Consumer insights and competitor benchmarking sharpened positioning and drove 11% premium growth.',
+    tags: ['Market Research', 'Positioning', 'Distribution'],
+  },
+  {
+    role: 'Product Management Intern',
+    company: 'Pidilite Industries – Dealer App',
+    location: 'Mumbai',
+    dates: 'Apr 2024 – Jun 2024',
+    summary:
+      'Owned the Dealer App product lifecycle across research, PRDs, UI/UX reviews, sprint planning and go-live. Set the product vision, roadmap and quarterly OKRs after benchmarking 5 competing dealer apps.',
+    tags: ['PRD', 'Roadmap', 'OKRs'],
+  },
+  {
+    role: 'Full Stack Engineering Analyst',
+    company: 'Accenture (client: H&M)',
+    location: 'Gurgaon',
     dates: 'May 2021 – Jun 2023',
     summary:
-      'Led a 15-member cross-functional team modernizing Azure cloud middleware and CI/CD, cutting release turnaround 11%. Ran A/B-tested campaigns that raised end-to-end conversion 17%, CTR 15% and AOV 12%.',
-    tags: ['Azure', 'APIs', 'A/B Testing'],
+      'Led a 15-member cross-functional team on Azure cloud middleware and APIs for H&M, cutting release turnaround 11% and project delivery from 25 to 16 weeks. Cut Azure costs 10% and sped up incident response 20% with Splunk alerting; won the Accenture Celebrates Excellence (ACE) Award.',
+    tags: ['Azure', 'APIs', 'Jira', 'Splunk'],
   },
   {
     role: 'Product Engineering Intern',
     company: 'HighRadius',
+    location: 'Hyderabad',
     dates: 'Apr 2020 – May 2021',
     summary:
-      'Architected 50+ RPA bots and an AI-enabled Accounts Receivable dashboard for Order-to-Cash teams. The automation improved operational efficiency by 12%.',
-    tags: ['RPA', 'AI Analytics', 'O2C'],
+      'Architected 50+ RPA bots for workflow automation and report extraction across customer portals, and streamlined MySQL data architecture to raise operational efficiency 12%. Built an AI-enabled Accounts Receivable dashboard to speed up the Order-to-Cash cycle.',
+    tags: ['RPA', 'MySQL', 'O2C'],
   },
 ]
 
 export const projects = [
   {
-    title: 'Trade Marketing & Dealer App Funnel',
+    title: 'M-Seal Master’s Club Loyalty Revamp',
     company: 'Pidilite Industries',
     description:
-      'Primary research with 450+ stakeholders, 12 retailer tiers and a North Star metric to fix scheme comprehension and Dealer App drop-off.',
+      'Owned the loyalty app roadmap, backlog and UAT, and launched a gamified product-learning module with persona-based content.',
     metrics: [
-      { value: '+35%', label: 'Scheme comprehension' },
-      { value: '−34%', label: 'App bounce rate' },
+      { value: '+18%', label: 'CTR' },
+      { value: '+15%', label: 'Daily active users' },
+      { value: '+25', label: 'NPS points' },
     ],
-    tags: ['Go-To-Market', 'Cohort Analysis', 'Primary Research', 'Experimentation'],
-    featured: true,
+    tags: ['PRD', 'A/B Testing', 'Funnel Analytics', 'Gamification'],
   },
   {
-    title: 'AI Accounts Receivable Dashboard',
-    company: 'HighRadius',
+    title: 'Agentic AI Assistant & RAG Chatbot',
+    company: 'Pidilite Industries',
     description:
-      'An AI-enabled dashboard tracking B2B debtor KPIs, fed by 50+ RPA bots that automated report extraction.',
-    metrics: [{ value: '+12%', label: 'Operational efficiency' }],
-    tags: ['RPA', 'AI Analytics', 'Data Architecture'],
+      'Built a RAG pipeline on LLMs for personalised user help, plus an evaluation framework covering task success, escalation and hallucination checks.',
+    metrics: [
+      { value: '5%→12%', label: 'Resolution rate' },
+      { value: '1,000+', label: 'Test cases' },
+    ],
+    tags: ['LLM', 'RAG', 'AI Evals', 'CSAT'],
   },
   {
-    title: 'Cloud Middleware Modernization',
+    title: 'Rural GTM & “Pidilite Dil Se” Pilot',
+    company: 'Pidilite Industries – Central UP',
+    description:
+      'Field marketing across contractors, architects and influencers, and a trade pilot in Jhansi that became a GTM playbook for pan-India rollout.',
+    metrics: [
+      { value: '+13%', label: 'Counter share' },
+      { value: '+30%', label: 'Active customers' },
+      { value: '+37%', label: 'Tertiary sales' },
+    ],
+    tags: ['Go-To-Market', 'Channel Expansion', 'P&L'],
+  },
+  {
+    title: 'Azure Middleware for H&M',
     company: 'Accenture',
     description:
-      'Azure middleware, core APIs and CI/CD rebuilt with a 15-member team, which sped up releases and campaign testing.',
+      'Maintained Azure cloud middleware and APIs with a 15-member team across India, Europe and US time zones, tracking dependencies in Jira and KPIs in Splunk.',
     metrics: [
-      { value: '−11%', label: 'Release turnaround' },
-      { value: '+17%', label: 'E2E conversion' },
+      { value: '−11%', label: 'Release TAT' },
+      { value: '25→16', label: 'Weeks to deliver' },
+      { value: '−10%', label: 'Cloud cost' },
     ],
-    tags: ['Azure', 'CI/CD', 'A/B Testing', 'Agile'],
+    tags: ['Azure', 'Docker', 'Splunk', 'Agile'],
   },
 ]
 
 export const skills = [
   {
-    group: 'Product & Business',
-    items: ['Product Strategy', 'Growth & GTM', 'Category Management', 'Funnel Optimization', 'User Journey Mapping', 'Stakeholder Management', 'Agile'],
+    group: 'Product',
+    items: ['Product Lifecycle Management', 'PRD / BRD', 'Roadmapping', 'RICE Prioritization', 'A/B Testing', 'Funnel Optimization', 'UAT', 'OKRs'],
   },
   {
-    group: 'Analytics',
-    items: ['A/B Testing', 'Cohort Analysis', 'North Star Metrics', 'Google Analytics', 'Predictive Analytics', 'Market Research'],
+    group: 'Business',
+    items: ['Category Management', 'P&L & Margin Management', 'Go-To-Market', 'Pricing & Positioning', 'Demand Forecasting', 'Channel Expansion', 'Competitive Benchmarking'],
   },
   {
-    group: 'Technology',
-    items: ['Azure', 'APIs', 'CI/CD', 'RPA', 'SQL', 'Docker', 'Kubernetes', 'Salesforce', 'SAP', 'Jira', 'Figma'],
+    group: 'AI & Data',
+    items: ['LLMs', 'RAG', 'Agentic AI Evaluation', 'Power BI', 'SQL', 'Advanced Excel', 'Google Analytics', 'Splunk'],
+  },
+  {
+    group: 'Tech',
+    items: ['Azure', 'APIs', 'Docker', 'RPA', 'MySQL', 'GitLab', 'Jira', 'ServiceNow'],
   },
 ]
+
+export const recognition = {
+  awards: [
+    { title: 'Spirit of Pidilite Award', detail: 'Highest market share gain in the division, Q1 FY27', org: 'PIDILITE' },
+    { title: 'Accenture Celebrates Excellence (ACE) Award', detail: 'Cross-functional stakeholder management and release execution', org: 'ACCENTURE' },
+    { title: 'Campus Winner, Next Horizon Strategy Challenge', detail: 'Accenture B-School competition', org: 'IIM MUMBAI' },
+    { title: 'Campus Winner, Cognoscenti Case Challenge', detail: 'Asian Paints case competition', org: 'IIM MUMBAI' },
+  ],
+  education: [
+    { degree: 'MBA – General Management', school: 'Indian Institute of Management, Mumbai', years: '2023 – 2025' },
+    {
+      degree: 'B.Tech',
+      school: 'KIIT, Bhubaneswar',
+      years: '2017 – 2021',
+      note: 'Convenor, Kraya & Kuber Marketing Society · Captain, Football team',
+    },
+  ],
+}

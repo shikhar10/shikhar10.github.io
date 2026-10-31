@@ -12,14 +12,14 @@ export default function Experience() {
   return (
     <section id="experience" className="relative py-28 md:py-40">
       <div className="gutter mx-auto max-w-[1440px]">
-        <SectionHeading index="04" label="EXPERIENCE" title="Where I've built and shipped." />
+        <SectionHeading index="05" label="EXPERIENCE" title="Where I've built and shipped." />
 
         <ol className="border-t border-white/10" onMouseLeave={() => setActive(0)}>
           {experience.map((job, i) => {
             const isOpen = active === i
             return (
               <motion.li
-                key={job.company}
+                key={`${job.role}-${job.dates}`}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.4 }}
@@ -36,13 +36,13 @@ export default function Experience() {
                   <span className={`font-mono text-xs transition-colors ${isOpen ? 'text-neon' : 'text-white/30'}`}>0{i + 1}</span>
                   <span className="min-w-0">
                     <span
-                      className={`block font-display text-2xl font-bold uppercase leading-none tracking-tight transition-colors duration-300 sm:text-4xl lg:text-6xl ${
+                      className={`block font-display text-2xl font-bold uppercase leading-none tracking-tight transition-colors duration-300 text-balance sm:text-4xl lg:text-5xl ${
                         isOpen ? 'text-white' : 'text-white/35'
                       }`}
                     >
                       {job.role}
                     </span>
-                    <span className="mt-3 block font-mono text-xs tracking-[0.18em] text-white/50">@ {job.company.toUpperCase()}</span>
+                    <span className="mt-3 block font-mono text-xs tracking-[0.18em] text-white/50">@ {job.company.toUpperCase()}{job.location && ` · ${job.location.toUpperCase()}`}</span>
                   </span>
                   <span
                     className={`flex h-10 w-10 items-center justify-center rounded-full border transition-all duration-300 md:h-12 md:w-12 ${
